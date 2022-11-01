@@ -10,14 +10,24 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit3-03-JS/sw.js", {
+    scope: "/ICS2O-Unit3-03-JS/",
   })
 }
 
 /**
  * This function displays an alert.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+function solveVolume() {
+  //input
+  const radius = parseFloat(document.getElementById("radius-of-sphere").value)
+
+  //process
+  const volume = (4.0/3.0) * Math.PI * radiusMath.pow(3)
+
+  //output
+  document.getElementById("volume").innerHTML = `Volume = ${volume.toFixed(
+    2
+  )} cm³`
 }
+
