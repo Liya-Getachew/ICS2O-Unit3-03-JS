@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: #D4D3F0;
 }
 
 p {
@@ -31,4 +31,22 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 15pt;
+}
+
+.output {
+  font-size: 130%
+}
+
+#volume {
+  padding-top: 15px;
+}
+
+#formula {
+  float: right;
+  margin-right: 15px;
+}
+
+img {
+  float: right;
+  margin-right: 15px;
 }
