@@ -60,37 +60,42 @@
         <div id="formula">
           <p>Formula:</p>
           <p>Volume = (4/3)πr³</p>
-          <img src="./images/volume-sphere.svg" alt="sphere volume" height="200" width="200">
+          <img
+            src="./images/volume-sphere.svg"
+            alt="sphere volume"
+            height="200"
+            width="200"
+          />
         </div>
-          <!-- Numeric Textfield -->
+        <!-- Numeric Textfield -->
         <div class="output">
           <form action="#">
             radius (r):
             <div class="mdl-textfield mdl-js-textfield">
-            <input
-            class="mdl-textfield__input"
-            type="text"
-            step="any"
-            pattern="-?[0-9]*(\.[0-9]+)?"
-            id="radius-of-sphere"
-            placeholder="insert value"
-            aria-label="radius"
-            />
-            <span class="mdl-textfield__error">Input is not a number!</span>
+              <input
+                class="mdl-textfield__input"
+                type="text"
+                step="any"
+                pattern="-?[0-9]*(\.[0-9]+)?"
+                id="radius-of-sphere"
+                placeholder="insert value"
+                aria-label="radius"
+              />
+              <span class="mdl-textfield__error">Input is not a number!</span>
             </div>
             cm
           </form>
         </div>
-          <!-- Raised button with ripple -->
-          <button
+        <!-- Raised button with ripple -->
+        <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
-          onclick="solveVolume()">
+          onclick="solveVolume()"
+        >
           calculate
-          </button>
-          <div id="answers">
+        </button>
+        <div id="answers">
           <div id="volume">Volume =___ cm³</div>
-          </div>
-
+        </div>
       </main>
     </div>
   </body>
