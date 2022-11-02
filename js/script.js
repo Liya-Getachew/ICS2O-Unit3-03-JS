@@ -23,7 +23,7 @@ function solveVolume() {
   const radius = parseFloat(document.getElementById("radius-of-sphere").value)
 
   //process
-  const volume = (4.0 / 3.0) * Math.PI * radiusMath.pow(3)
+  const volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3)
 
   //output
   document.getElementById("volume").innerHTML = `Volume = ${volume.toFixed(
